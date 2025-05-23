@@ -1,0 +1,22 @@
+<div class="form-container">
+  <h2>{{ data?.id ? 'Edit Book Details' : 'Add New Book' }}</h2>
+
+  <form [formGroup]="bookForm" (ngSubmit)="saveBook()">
+    <label>Title</label>
+    <input type="text" formControlName="title" />
+
+    <label>Author</label>
+    <input type="text" formControlName="author" />
+
+    <label>ISBN</label>
+    <input type="text" formControlName="isbn" />
+
+    <label>Publication Date</label>
+    <input type="date" formControlName="publicationDate" />
+
+    <div class="buttons">
+      <button type="submit">Save</button>
+      <button type="button" (click)="closeDialog()">Cancel</button>
+    </div>
+  </form>
+</div>

@@ -1,0 +1,21 @@
+<div class="book-card" *ngFor="let book of books">
+  <div class="book-details">
+     
+    <h3>{{ book.title }}</h3>
+    <p><strong> ID :</strong> {{ book.id }}</p>
+    <p><strong> Author :</strong> {{ book.author }}</p>
+    <p><strong> ISBN :</strong> {{ book.isbn }}</p>
+    <p><strong> Published Date :</strong> {{ book.publicationDate | date: 'yyyy-MM-dd' }}</p>
+  </div>
+
+  
+  <div class="book-actions">
+    <button (click)="edit.emit(book)" title="Edit">
+      <span class="material-icons">edit</span>
+    </button>
+    <button (click)="delete.emit(book.id)" title="Delete">
+      <span class="material-icons">delete</span>
+    </button>
+    
+  </div>
+</div>

@@ -1,0 +1,79 @@
+.container {
+  padding: 0.5rem 5rem;
+  background-color: #f0f4f8;
+}
+
+.welcome-section {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 60px;
+  gap: 1rem;
+  background-color: #f0f4f8;
+  flex-wrap: wrap;
+  border-radius: 12px;
+  box-shadow: 0 3px 8px rgba(0, 0, 0, 0.1);
+}
+
+.welcome-text {
+  max-width: 60%;
+  min-width: 280px;
+}
+
+.welcome-text h3 {
+  font-size: 2.2rem;
+  margin-bottom: 1rem;
+  color: #222;
+  font-weight: 700;
+  line-height: 1.2;
+}
+
+.welcome-text p {
+  font-size: 1.2rem;
+  margin-bottom: 1.5rem;
+  color: #444;
+  line-height: 1.5;
+}
+
+.add-button {
+  background-color: #1976d2;
+  color: white;
+  border: none;
+  padding: 0.6rem 1.4rem;
+  font-size: 1.1rem;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  font-weight: 600;
+  box-shadow: 0 2px 6px rgba(25, 118, 210, 0.4);
+}
+
+.add-button:hover {
+  background-color: #115293;
+}
+
+.library-image {
+  padding-top: 50px ;
+  max-width: 35%;
+  min-width: 200px;
+  height: 500px; 
+  object-fit: cover; 
+  border-radius: 12px;
+}
+
+/* Responsive for smaller screens */
+@media (max-width: 768px) {
+  .welcome-section {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .welcome-text {
+    max-width: 100%;
+  }
+
+  .banner-image {
+    max-width: 80%;
+    margin-top: 20px;
+  }
+}
